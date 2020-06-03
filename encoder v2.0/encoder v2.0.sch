@@ -42,7 +42,7 @@ U 1 1 5ED2CC34
 P 900 1350
 F 0 "J1" H 818 1025 50  0000 C CNN
 F 1 "Conn_01x02" H 818 1116 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 900 1350 50  0001 C CNN
+F 2 "Terminal Degson:dg126" H 900 1350 50  0001 C CNN
 F 3 "~" H 900 1350 50  0001 C CNN
 	1    900  1350
 	-1   0    0    1   
@@ -392,14 +392,6 @@ Wire Wire Line
 	4100 1400 4100 1250
 Wire Wire Line
 	4100 1500 4100 1550
-Wire Wire Line
-	3600 1600 3600 2100
-Wire Wire Line
-	3600 2100 4650 2100
-Wire Wire Line
-	4650 2100 4650 1600
-Wire Wire Line
-	4650 1600 5200 1600
 Wire Notes Line
 	3450 1150 3400 1000
 Wire Notes Line
@@ -514,4 +506,38 @@ Wire Wire Line
 	3600 1400 4100 1400
 Wire Wire Line
 	3600 1500 4100 1500
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5ED722D6
+P 4150 2400
+F 0 "J6" H 4230 2442 50  0000 L CNN
+F 1 "Conn_01x01" H 4230 2351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4150 2400 50  0001 C CNN
+F 3 "~" H 4150 2400 50  0001 C CNN
+	1    4150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 5ED73947
+P 3850 2150
+F 0 "JP1" V 3804 2237 50  0000 L CNN
+F 1 "Jumper_3_Open" V 3895 2237 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 2150 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1600 3600 2150
+Wire Wire Line
+	3600 2150 3700 2150
+Wire Wire Line
+	3850 1900 4450 1900
+Wire Wire Line
+	4450 1900 4450 1600
+Wire Wire Line
+	4450 1600 5200 1600
+Wire Wire Line
+	3850 2400 3950 2400
 $EndSCHEMATC
